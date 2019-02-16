@@ -1,0 +1,1010 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="static/img/mi.ico">
+    <script type="text/javascript" src="static/js/jquery-3.3.1.js"></script><!--引入jquery库-->
+    <script type="text/javascript" src="static/bootstrap-3.3.7-dist/js/bootstrap.js"></script><!--引入bootstrap的js文件-->
+    <link rel="stylesheet" href="static/bootstrap-3.3.7-dist/css/bootstrap.css"><!--引入bootstrap的css文件-->
+    <link rel="stylesheet" href="static/font-awesome-4.7.0/css/font-awesome.css"><!--引入font-awesome, 提供更多的图标功能-->
+    <link rel="stylesheet" href="static/css/index.css"><!--引入个人编写的样式文件-->
+
+    <title>小米商城 - 首页</title>
+</head>
+<body>
+
+<!--顶部导航-->
+<div class="top-bar">
+    <div class="top-container">
+        <div class="top-nav">
+            <a href="javascript:;">小米商城</a> |
+            <a href="javascript:;">MIUI</a> |
+            <a href="javascript:;">IoT</a> |
+            <a href="javascript:;">云服务</a> |
+            <a href="javascript:;">金融</a> |
+            <a href="javascript:;">有品</a> |
+            <a href="javascript:;">小爱开放平台</a> |
+            <a href="javascript:;">资质证照</a> ||
+            <a href="javascript:;">协议规则</a> |
+            <a href="javascript:;">下载app</a> |
+            <a href="javascript:;">Select Region</a>
+        </div>
+
+        <div class="top-cart">
+            <div style="background: #515151;height:40px;width: 120px;text-align: center;" id="shopping-cart"><a
+                    href="javascript:;"><span class="fa fa-shopping-cart" style="font-size: 1.5em;"></span> 购物车（0）</a>
+            </div>
+            <div class="cart-tips" id="cart-tips">
+                <p>购物车中还没有商品，赶紧选购吧！</p>
+            </div>
+        </div>
+        <div class="top-info">
+            <a href="javascript:;">登录</a> |
+            <a href="javascript:;">注册</a> |
+            <a href="javascript:;">消息通知</a>
+        </div>
+    </div>
+</div>
+
+<!--主内容-->
+<div class="main">
+
+    <!--二级导航-->
+    <div class="tab-bar">
+        <div class="tab-logo">
+            <a><img src="static/img/mi.jpg"></a>
+        </div>
+        <div class="tab-nav">
+            <a href="javascript:;">小米手机</a>
+            <a href="javascript:;">红米</a>
+            <a href="javascript:;">电视</a>
+            <a href="javascript:;">笔记本</a>
+            <a href="javascript:;">家电</a>
+            <a href="javascript:;">新品</a>
+            <a href="javascript:;">路由器</a>
+            <a href="javascript:;">智能硬件</a>
+            <a href="javascript:;">服务</a>
+            <a href="javascript:;">社区</a>
+        </div>
+        <div class="tab-search">
+            <a href="javascript:;">
+                <div class="search-button"><i class="glyphicon glyphicon-search" style="font-size: 1.2em;"></i></div>
+            </a>
+            <div class="input-search">
+                <input id="content-search-input" type="text">
+            </div>
+        </div>
+    </div>
+    <div class="top-recommend">
+        <div class="top-recommend-content">
+            <div hidden>
+                <div>
+                    <div class="test"></div>
+                    <p style="position: absolute;font-size:0.9em;border: 1px solid red;width: 60px;text-align: center;color:red;margin-left:70px;">新品</p>
+                    <img src="static/img/mix3-320.png">
+                    <p style="font-size: 0.9em;margin-top:18px;">小米MIX3</p>
+                    <p style="font-size: 0.9em;color:red;">3299元起</p>
+                </div>
+                <div>
+                    <div class="test"></div>
+                    <p style="position: absolute;font-size:0.9em;border: 1px solid red;width: 60px;text-align: center;color:red;margin-left:70px;">新品</p>
+                    <img src="static/img/qingchun-320.png">
+                    <p style="font-size: 0.9em;margin-top:18px;">小米8青春版</p>
+                    <p style="font-size: 0.9em;color:red;">1399元起</p>
+                </div>
+                <div>
+                    <div class="test"></div>
+                    <p style="position: absolute;font-size:0.9em;border: 1px solid red;width: 60px;text-align: center;color:red;margin-left:70px;">新品</p>
+                    <img src="static/img/pc-320-220-mi8.png">
+                    <p style="font-size: 0.9em;margin-top:18px;">小米8</p>
+                    <p style="font-size: 0.9em;color:red;">2699元起</p>
+                </div>
+                <div>
+                    <div></div>
+                    <p style="position: absolute;font-size:0.9em;border: 1px solid red;width: 60px;text-align: center;color:red;margin-left:70px;">新品</p>
+                    <img src="static/img/pc-320-220-mi8se.png">
+                    <p style="font-size: 0.9em;margin-top:18px;">小米8se</p>
+                    <p style="font-size: 0.9em;color:red;">1699元起</p>
+                </div>
+            </div>
+            <div hidden>
+                <div>
+                    <div></div>
+                    <p style="position: absolute;font-size:0.9em;border: 1px solid red;width: 60px;text-align: center;color:red;margin-left:70px;">新品</p>
+                    <img src="static/img/note7320-220.png">
+                    <p style="font-size: 0.9em;margin-top:18px;">红米Note7</p>
+                    <p style="font-size: 0.9em;color:red;">999元起</p>
+                </div>
+                <div>
+                    <div></div>
+                    <p style="position: absolute;font-size:0.9em;border: 1px solid red;width: 60px;text-align: center;color:red;margin-left:70px;">新品</p>
+                    <img src="static/img/6pro320-220.png">
+                    <p style="font-size: 0.9em;margin-top:18px;">红米6Pro</p>
+                    <p style="font-size: 0.9em;color:red;">999元起</p>
+                </div>
+                <div>
+                    <div class="test"></div>
+                    <p style="position: absolute;font-size:0.9em;border: 1px solid red;width: 60px;text-align: center;color:red;margin-left:70px;">新品</p>
+                    <img src="static/img/666320.png">
+                    <p style="font-size: 0.9em;margin-top:18px;">红米6</p>
+                    <p style="font-size: 0.9em;color:red;">799元起</p>
+                </div>
+            </div>
+            <div hidden>
+                <div>
+                    <div class="test"></div>
+                    <p style="position: absolute;font-size:0.9em;border: 1px solid red;width: 60px;text-align: center;color:red;margin-left:70px;">新品</p>
+                    <img src="static/img/4s75.png">
+                    <p style="font-size: 0.9em;margin-top:18px;">小米电视4S 75英寸</p>
+                    <p style="font-size: 0.9em;color:red;">7999元起</p>
+                </div>
+            </div>
+            <div hidden>
+                <div>
+                    <div class="test"></div>
+                    <p style="position: absolute;font-size:0.9em;border: 1px solid red;width: 60px;text-align: center;color:red;margin-left:70px;">新品</p>
+                    <img src="static/img/mix3-320.png">
+                    <p style="font-size: 0.9em;margin-top:18px;">小米MIX3</p>
+                    <p style="font-size: 0.9em;color:red;">3299元起</p>
+                </div>
+                <div>
+                    <div class="test"></div>
+                    <p style="position: absolute;font-size:0.9em;border: 1px solid red;width: 60px;text-align: center;color:red;margin-left:70px;">新品</p>
+                    <img src="static/img/mix3-320.png">
+                    <p style="font-size: 0.9em;margin-top:18px;">小米MIX3</p>
+                    <p style="font-size: 0.9em;color:red;">3299元起</p>
+                </div>
+            </div>
+            <div hidden>
+                <div>
+                    <div class="test"></div>
+                    <p style="position: absolute;font-size:0.9em;border: 1px solid red;width: 60px;text-align: center;color:red;margin-left:70px;">新品</p>
+                    <img src="static/img/mix3-320.png">
+                    <p style="font-size: 0.9em;margin-top:18px;">小米MIX3</p>
+                    <p style="font-size: 0.9em;color:red;">3299元起</p>
+                </div>
+                <div>
+                    <div class="test"></div>
+                    <p style="position: absolute;font-size:0.9em;border: 1px solid red;width: 60px;text-align: center;color:red;margin-left:70px;">新品</p>
+                    <img src="static/img/mix3-320.png">
+                    <p style="font-size: 0.9em;margin-top:18px;">小米MIX3</p>
+                    <p style="font-size: 0.9em;color:red;">3299元起</p>
+                </div>
+                <div>
+                    <div class="test"></div>
+                    <p style="position: absolute;font-size:0.9em;border: 1px solid red;width: 60px;text-align: center;color:red;margin-left:70px;">新品</p>
+                    <img src="static/img/mix3-320.png">
+                    <p style="font-size: 0.9em;margin-top:18px;">小米MIX3</p>
+                    <p style="font-size: 0.9em;color:red;">3299元起</p>
+                </div>
+            </div>
+            <div hidden>
+                <div>
+                    <div class="test"></div>
+                    <p style="position: absolute;font-size:0.9em;border: 1px solid red;width: 60px;text-align: center;color:red;margin-left:70px;">新品</p>
+                    <img src="static/img/mix3-320.png">
+                    <p style="font-size: 0.9em;margin-top:18px;">小米MIX3</p>
+                    <p style="font-size: 0.9em;color:red;">3299元起</p>
+                </div>
+                <div>
+                    <div class="test"></div>
+                    <p style="position: absolute;font-size:0.9em;border: 1px solid red;width: 60px;text-align: center;color:red;margin-left:70px;">新品</p>
+                    <img src="static/img/mix3-320.png">
+                    <p style="font-size: 0.9em;margin-top:18px;">小米MIX3</p>
+                    <p style="font-size: 0.9em;color:red;">3299元起</p>
+                </div>
+                <div>
+                    <div class="test"></div>
+                    <p style="position: absolute;font-size:0.9em;border: 1px solid red;width: 60px;text-align: center;color:red;margin-left:70px;">新品</p>
+                    <img src="static/img/mix3-320.png">
+                    <p style="font-size: 0.9em;margin-top:18px;">小米MIX3</p>
+                    <p style="font-size: 0.9em;color:red;">3299元起</p>
+                </div>
+            </div>
+            <div hidden>
+                <div>
+                    <div class="test"></div>
+                    <p style="position: absolute;font-size:0.9em;border: 1px solid red;width: 60px;text-align: center;color:red;margin-left:70px;">新品</p>
+                    <img src="static/img/mix3-320.png">
+                    <p style="font-size: 0.9em;margin-top:18px;">小米MIX3</p>
+                    <p style="font-size: 0.9em;color:red;">3299元起</p>
+                </div>
+                <div>
+                    <div class="test"></div>
+                    <p style="position: absolute;font-size:0.9em;border: 1px solid red;width: 60px;text-align: center;color:red;margin-left:70px;">新品</p>
+                    <img src="static/img/mix3-320.png">
+                    <p style="font-size: 0.9em;margin-top:18px;">小米MIX3</p>
+                    <p style="font-size: 0.9em;color:red;">3299元起</p>
+                </div>
+                <div>
+                    <div class="test"></div>
+                    <p style="position: absolute;font-size:0.9em;border: 1px solid red;width: 60px;text-align: center;color:red;margin-left:70px;">新品</p>
+                    <img src="static/img/mix3-320.png">
+                    <p style="font-size: 0.9em;margin-top:18px;">小米MIX3</p>
+                    <p style="font-size: 0.9em;color:red;">3299元起</p>
+                </div>
+                <div>
+                    <div class="test"></div>
+                    <p style="position: absolute;font-size:0.9em;border: 1px solid red;width: 60px;text-align: center;color:red;margin-left:70px;">新品</p>
+                    <img src="static/img/mix3-320.png">
+                    <p style="font-size: 0.9em;margin-top:18px;">小米MIX3</p>
+                    <p style="font-size: 0.9em;color:red;">3299元起</p>
+                </div>
+            </div>
+            <div hidden>
+                <div>
+                    <div class="test"></div>
+                    <p style="position: absolute;font-size:0.9em;border: 1px solid red;width: 60px;text-align: center;color:red;margin-left:70px;">新品</p>
+                    <img src="static/img/mix3-320.png">
+                    <p style="font-size: 0.9em;margin-top:18px;">小米MIX3</p>
+                    <p style="font-size: 0.9em;color:red;">3299元起</p>
+                </div>
+                <div>
+                    <div class="test"></div>
+                    <p style="position: absolute;font-size:0.9em;border: 1px solid red;width: 60px;text-align: center;color:red;margin-left:70px;">新品</p>
+                    <img src="static/img/mix3-320.png">
+                    <p style="font-size: 0.9em;margin-top:18px;">小米MIX3</p>
+                    <p style="font-size: 0.9em;color:red;">3299元起</p>
+                </div>
+                <div>
+                    <div class="test"></div>
+                    <p style="position: absolute;font-size:0.9em;border: 1px solid red;width: 60px;text-align: center;color:red;margin-left:70px;">新品</p>
+                    <img src="static/img/mix3-320.png">
+                    <p style="font-size: 0.9em;margin-top:18px;">小米MIX3</p>
+                    <p style="font-size: 0.9em;color:red;">3299元起</p>
+                </div>
+            </div>
+            <div>
+                <div></div>
+            </div>
+            <div>
+                <div></div>
+            </div>
+        </div>
+    </div>
+    <div class="hot-search">
+        <div class="hot-content" hidden>
+            <a href="">
+                <div><span>小米6X</span><i>约有6件</i></div>
+            </a>
+            <a href="">
+                <div><span>小米MIX2S</span><i>约有5件</i></div>
+            </a>
+            <a href="">
+                <div><span>黑鲨游戏手机</span><i>约有3件</i></div>
+            </a>
+            <a href="">
+                <div><span>红米Note5</span><i>约有6件</i></div>
+            </a>
+            <a href="">
+                <div><span>红米5A</span><i>约有13件</i></div>
+            </a>
+            <a href="">
+                <div><span>小米电视4C</span><i>约有5件</i></div>
+            </a>
+            <a href="">
+                <div><span>电视32英寸</span><i>约有3件</i></div>
+            </a>
+            <a href="">
+                <div><span>笔记本pro</span><i>约有5件</i></div>
+            </a>
+            <a href="">
+                <div><span>空气净化器</span><i>约有11件</i></div>
+            </a>
+            <a href="">
+                <div><span>净水器</span><i>约有8件</i></div>
+            </a>
+        </div>
+    </div>
+    <!--推荐内容-->
+    <div class="recommend-container">
+        <img src="static/img/recommend-1.jpg" style="width: 100%;height: auto;margin-top:5px;">
+        <div class="options-container">
+            <ul class="options">
+                <a href="">
+                    <li>手机 电话卡<span class="glyphicon glyphicon-menu-right"></span></li>
+                </a>
+                <a href="">
+                    <li>电视 盒子<span class="glyphicon glyphicon-menu-right"></span></li>
+                </a>
+                <a href="">
+                    <li>笔记本 平板<span class="glyphicon glyphicon-menu-right"></span></li>
+                </a>
+                <a href="">
+                    <li>家电 插线板<span class="glyphicon glyphicon-menu-right"></span></li>
+                </a>
+                <a href="">
+                    <li>出行 穿戴<span class="glyphicon glyphicon-menu-right"></span></li>
+                </a>
+                <a href="">
+                    <li>智能 路由器<span class="glyphicon glyphicon-menu-right"></span></li>
+                </a>
+                <a href="">
+                    <li>电源 配件<span class="glyphicon glyphicon-menu-right"></span></li>
+                </a>
+                <a href="">
+                    <li>健康 儿童<span class="glyphicon glyphicon-menu-right"></span></li>
+                </a>
+                <a href="">
+                    <li>耳机 音箱<span class="glyphicon glyphicon-menu-right"></span></li>
+                </a>
+                <a href="">
+                    <li>生活 箱包<span class="glyphicon glyphicon-menu-right"></span></li>
+                </a>
+            </ul>
+        </div>
+        <div class="recommend-content" hidden>
+            <div class="phone" hidden>
+                <a href="">
+                    <div>
+                        <img src="static/img/mix3.png"><span>小米MIX3</span>
+                    </div>
+                </a>
+                <a href="">
+                    <div>
+                        <img src="static/img/mi8-qingchun.png"><span>小米8青春版</span>
+                    </div>
+                </a>
+                <a href="">
+                    <div>
+                        <img src="static/img/mi8-pingmu.png"><span>小米8屏幕指纹版</span>
+                    </div>
+                </a>
+                <a href="">
+                    <div>
+                        <img src="static/img/mi8.png"><span>小米8</span>
+                    </div>
+                </a>
+                <a href="">
+                    <div>
+                        <img src="static/img/mi8se.png"><span>小米8SE</span>
+                    </div>
+                </a>
+                <a href="">
+                    <div>
+                        <img src="static/img/mix2s-white.png"><span>小米MIX 2S</span>
+                    </div>
+                </a>
+                <a href="">
+                    <div>
+                        <img src="static/img/max3.png"><span>小米Max3</span>
+                    </div>
+                </a>
+                <a href="">
+                    <div>
+                        <img src="static/img/mi6x.jpg"><span>小米6X</span>
+                    </div>
+                </a>
+                <a href="">
+                    <div>
+                        <img src="static/img/heishahelo.png"><span>黑鲨游戏手机Helo</span>
+                    </div>
+                </a>
+                <a href="">
+                    <div>
+                        <img src="static/img/heisha.png"><span>黑鲨游戏手机</span>
+                    </div>
+                </a>
+                <a href="">
+                    <div>
+                        <img src="static/img/redmi-note7.png"><span>红米Note7</span>
+                    </div>
+                </a>
+                <a href="">
+                    <div>
+                        <img src="static/img/mi6pro.png"><span>红米6 Pro</span>
+                    </div>
+                </a>
+                <a href="">
+                    <div>
+                        <img src="static/img/redmi6.png"><span>红米6</span>
+                    </div>
+                </a>
+                <a href="">
+                    <div>
+                        <img src="static/img/mi6a.png"><span>红米6A</span>
+                    </div>
+                </a>
+                <a href="">
+                    <div>
+                        <img src="static/img/mi-note5.png"><span>红米Note5</span>
+                    </div>
+                </a>
+                <a href="">
+                    <div>
+                        <img src="static/img/4g.jpg"><span>移动4G+专区</span>
+                    </div>
+                </a>
+                <a href="">
+                    <div>
+                        <img src="static/img/compare.jpg"><span>对比手机</span>
+                    </div>
+                </a>
+                <a href="">
+                    <div>
+                        <img src="static/img/mifenka.jpg"><span>米粉卡 日租卡</span>
+                    </div>
+                </a>
+                <a href="">
+                    <div>
+                        <img src="static/img/mimobile.jpg"><span>小米移动 电话卡</span>
+                    </div>
+                </a>
+                <a href="">
+                    <div>
+                        <img src="static/img/repaire.png"><span>手机上门维修</span>
+                    </div>
+                </a>
+                <a href="">
+                    <div>
+                        <img src="static/img/yunfuwu.jpg"><span>云服务空间月卡</span>
+                    </div>
+                </a>
+            </div>
+            <div class="tv" hidden>
+                <a href="">
+                    <div>
+                        <img src="static/img/redmi-note7.png"><span>红米Note7</span>
+                    </div>
+                </a>
+                <a href="">
+                    <div>
+                        <img src="static/img/mi6pro.png"><span>红米6 Pro</span>
+                    </div>
+                </a>
+                <a href="">
+                    <div>
+                        <img src="static/img/redmi6.png"><span>红米6</span>
+                    </div>
+                </a>
+                <a href="">
+                    <div>
+                        <img src="static/img/redmi6.png"><span>红米6</span>
+                    </div>
+                </a>
+                <a href="">
+                    <div>
+                        <img src="static/img/mi6a.png"><span>红米6A</span>
+                    </div>
+                </a>
+                <a href="">
+                    <div>
+                        <img src="static/img/mi-note5.png"><span>红米Note5</span>
+                    </div>
+                </a>
+                <a href="">
+                    <div>
+                        <img src="static/img/4g.jpg"><span>移动4G+专区</span>
+                    </div>
+                </a>
+                <a href="">
+                    <div>
+                        <img src="static/img/compare.jpg"><span>对比手机</span>
+                    </div>
+                </a>
+                <a href="">
+                    <div>
+                        <img src="static/img/mifenka.jpg"><span>米粉卡 日租卡</span>
+                    </div>
+                </a>
+                <a href="">
+                    <div>
+                        <img src="static/img/mimobile.jpg"><span>小米移动 电话卡</span>
+                    </div>
+                </a>
+                <a href="">
+                    <div>
+                        <img src="static/img/repaire.png"><span>手机上门维修</span>
+                    </div>
+                </a>
+            </div>
+            <div class="laptop" hidden>
+                <a href="">
+                    <div>
+                        <img src="static/img/mi8-qingchun.png"><span>小米8青春版</span>
+                    </div>
+                </a>
+                <a href="">
+                    <div>
+                        <img src="static/img/mi8-pingmu.png"><span>小米8屏幕指纹版</span>
+                    </div>
+                </a>
+                <a href="">
+                    <div>
+                        <img src="static/img/mi8.png"><span>小米8</span>
+                    </div>
+                </a>
+                <a href="">
+                    <div>
+                        <img src="static/img/mi8se.png"><span>小米8SE</span>
+                    </div>
+                </a>
+                <a href="">
+                    <div>
+                        <img src="static/img/mix2s-white.png"><span>小米MIX 2S</span>
+                    </div>
+                </a>
+                <a href="">
+                    <div>
+                        <img src="static/img/compare.jpg"><span>对比手机</span>
+                    </div>
+                </a>
+                <a href="">
+                    <div>
+                        <img src="static/img/mifenka.jpg"><span>米粉卡 日租卡</span>
+                    </div>
+                </a>
+                <a href="">
+                    <div>
+                        <img src="static/img/mimobile.jpg"><span>小米移动 电话卡</span>
+                    </div>
+                </a>
+                <a href="">
+                    <div>
+                        <img src="static/img/repaire.png"><span>手机上门维修</span>
+                    </div>
+                </a>
+            </div>
+            <div class="electric" hidden>
+                <a href="">
+                    <div>
+                        <img src="static/img/mifenka.jpg"><span>米粉卡 日租卡</span>
+                    </div>
+                </a>
+                <a href="">
+                    <div>
+                        <img src="static/img/mimobile.jpg"><span>小米移动 电话卡</span>
+                    </div>
+                </a>
+                <a href="">
+                    <div>
+                        <img src="static/img/repaire.png"><span>手机上门维修</span>
+                    </div>
+                </a>
+                <a href="">
+                    <div>
+                        <img src="static/img/yunfuwu.jpg"><span>云服务空间月卡</span>
+                    </div>
+                </a>
+                <a href="">
+                    <div>
+                        <img src="static/img/mix2s-white.png"><span>小米MIX 2S</span>
+                    </div>
+                </a>
+                <a href="">
+                    <div>
+                        <img src="static/img/compare.jpg"><span>对比手机</span>
+                    </div>
+                </a>
+                <a href="">
+                    <div>
+                        <img src="static/img/mifenka.jpg"><span>米粉卡 日租卡</span>
+                    </div>
+                </a>
+                <a href="">
+                    <div>
+                        <img src="static/img/mimobile.jpg"><span>小米移动 电话卡</span>
+                    </div>
+                </a>
+            </div>
+            <div class="trip" hidden>
+                <a href="">
+                    <div>
+                        <img src="static/img/mimobile.jpg"><span>小米移动 电话卡</span>
+                    </div>
+                </a>
+                <a href="">
+                    <div>
+                        <img src="static/img/repaire.png"><span>手机上门维修</span>
+                    </div>
+                </a>
+                <a href="">
+                    <div>
+                        <img src="static/img/yunfuwu.jpg"><span>云服务空间月卡</span>
+                    </div>
+                </a>
+                <a href="">
+                    <div>
+                        <img src="static/img/mix2s-white.png"><span>小米MIX 2S</span>
+                    </div>
+                </a>
+                <a href="">
+                    <div>
+                        <img src="static/img/compare.jpg"><span>对比手机</span>
+                    </div>
+                </a>
+                <a href="">
+                    <div>
+                        <img src="static/img/mifenka.jpg"><span>米粉卡 日租卡</span>
+                    </div>
+                </a>
+                <a href="">
+                    <div>
+                        <img src="static/img/mimobile.jpg"><span>小米移动 电话卡</span>
+                    </div>
+                </a>
+            </div>
+            <div class="smart" hidden>
+                <a href="">
+                    <div>
+                        <img src="static/img/mifenka.jpg"><span>米粉卡 日租卡</span>
+                    </div>
+                </a>
+                <a href="">
+                    <div>
+                        <img src="static/img/mimobile.jpg"><span>小米移动 电话卡</span>
+                    </div>
+                </a>
+                <a href="">
+                    <div>
+                        <img src="static/img/repaire.png"><span>手机上门维修</span>
+                    </div>
+                </a>
+                <a href="">
+                    <div>
+                        <img src="static/img/yunfuwu.jpg"><span>云服务空间月卡</span>
+                    </div>
+                </a>
+                <a href="">
+                    <div>
+                        <img src="static/img/mix2s-white.png"><span>小米MIX 2S</span>
+                    </div>
+                </a>
+                <a href="">
+                    <div>
+                        <img src="static/img/compare.jpg"><span>对比手机</span>
+                    </div>
+                </a>
+                <a href="">
+                    <div>
+                        <img src="static/img/mifenka.jpg"><span>米粉卡 日租卡</span>
+                    </div>
+                </a>
+            </div>
+            <div class="parts" hidden>
+                <a href="">
+                    <div>
+                        <img src="static/img/mimobile.jpg"><span>小米移动 电话卡</span>
+                    </div>
+                </a>
+                <a href="">
+                    <div>
+                        <img src="static/img/repaire.png"><span>手机上门维修</span>
+                    </div>
+                </a>
+                <a href="">
+                    <div>
+                        <img src="static/img/yunfuwu.jpg"><span>云服务空间月卡</span>
+                    </div>
+                </a>
+                <a href="">
+                    <div>
+                        <img src="static/img/mix2s-white.png"><span>小米MIX 2S</span>
+                    </div>
+                </a>
+                <a href="">
+                    <div>
+                        <img src="static/img/compare.jpg"><span>对比手机</span>
+                    </div>
+                </a>
+                <a href="">
+                    <div>
+                        <img src="static/img/mifenka.jpg"><span>米粉卡 日租卡</span>
+                    </div>
+                </a>
+                <a href="">
+                    <div>
+                        <img src="static/img/yunfuwu.jpg"><span>云服务空间月卡</span>
+                    </div>
+                </a>
+                <a href="">
+                    <div>
+                        <img src="static/img/mix2s-white.png"><span>小米MIX 2S</span>
+                    </div>
+                </a>
+                <a href="">
+                    <div>
+                        <img src="static/img/compare.jpg"><span>对比手机</span>
+                    </div>
+                </a>
+                <a href="">
+                    <div>
+                        <img src="static/img/mifenka.jpg"><span>米粉卡 日租卡</span>
+                    </div>
+                </a>
+            </div>
+            <div class="health" hidden>
+                <a href="">
+                    <div>
+                        <img src="static/img/mix2s-white.png"><span>小米MIX 2S</span>
+                    </div>
+                </a>
+                <a href="">
+                    <div>
+                        <img src="static/img/compare.jpg"><span>对比手机</span>
+                    </div>
+                </a>
+                <a href="">
+                    <div>
+                        <img src="static/img/mifenka.jpg"><span>米粉卡 日租卡</span>
+                    </div>
+                </a>
+                <a href="">
+                    <div>
+                        <img src="static/img/yunfuwu.jpg"><span>云服务空间月卡</span>
+                    </div>
+                </a>
+                <a href="">
+                    <div>
+                        <img src="static/img/mix2s-white.png"><span>小米MIX 2S</span>
+                    </div>
+                </a>
+                <a href="">
+                    <div>
+                        <img src="static/img/compare.jpg"><span>对比手机</span>
+                    </div>
+                </a>
+                <a href="">
+                    <div>
+                        <img src="static/img/mifenka.jpg"><span>米粉卡 日租卡</span>
+                    </div>
+                </a>
+            </div>
+            <div class="voice" hidden>
+                <a href="">
+                    <div>
+                        <img src="static/img/repaire.png"><span>手机上门维修</span>
+                    </div>
+                </a>
+                <a href="">
+                    <div>
+                        <img src="static/img/yunfuwu.jpg"><span>云服务空间月卡</span>
+                    </div>
+                </a>
+                <a href="">
+                    <div>
+                        <img src="static/img/mix2s-white.png"><span>小米MIX 2S</span>
+                    </div>
+                </a>
+                <a href="">
+                    <div>
+                        <img src="static/img/compare.jpg"><span>对比手机</span>
+                    </div>
+                </a>
+                <a href="">
+                    <div>
+                        <img src="static/img/mifenka.jpg"><span>米粉卡 日租卡</span>
+                    </div>
+                </a>
+                <a href="">
+                    <div>
+                        <img src="static/img/mimobile.jpg"><span>小米移动 电话卡</span>
+                    </div>
+                </a>
+            </div>
+            <div class="life" hidden>
+                <a href="">
+                    <div>
+                        <img src="static/img/repaire.png"><span>手机上门维修</span>
+                    </div>
+                </a>
+                <a href="">
+                    <div>
+                        <img src="static/img/yunfuwu.jpg"><span>云服务空间月卡</span>
+                    </div>
+                </a>
+                <a href="">
+                    <div>
+                        <img src="static/img/mix2s-white.png"><span>小米MIX 2S</span>
+                    </div>
+                </a>
+                <a href="">
+                    <div>
+                        <img src="static/img/compare.jpg"><span>对比手机</span>
+                    </div>
+                </a>
+                <a href="">
+                    <div>
+                        <img src="static/img/mifenka.jpg"><span>米粉卡 日租卡</span>
+                    </div>
+                </a>
+                <a href="">
+                    <div>
+                        <img src="static/img/mimobile.jpg"><span>小米移动 电话卡</span>
+                    </div>
+                </a>
+                <a href="">
+                    <div>
+                        <img src="static/img/yunfuwu.jpg"><span>云服务空间月卡</span>
+                    </div>
+                </a>
+                <a href="">
+                    <div>
+                        <img src="static/img/mix2s-white.png"><span>小米MIX 2S</span>
+                    </div>
+                </a>
+                <a href="">
+                    <div>
+                        <img src="static/img/compare.jpg"><span>对比手机</span>
+                    </div>
+                </a>
+                <a href="">
+                    <div>
+                        <img src="static/img/mifenka.jpg"><span>米粉卡 日租卡</span>
+                    </div>
+                </a>
+                <a href="">
+                    <div>
+                        <img src="static/img/mimobile.jpg"><span>小米移动 电话卡</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!--新品销量-->
+    <div class="sales-container">
+        <div class="options">
+            <a href=""><div style="border-right: 1px solid #9d9d9d;border-bottom: 1px solid #9d9d9d;"><span
+                    class="fa fa-tablet"><p>选购手机</p></span></div></a>
+            <a href=""><div style="border-right: 1px solid #9d9d9d;border-bottom: 1px solid #9d9d9d;"><span
+                    class="fa fa-shopping-bag"><p>企业团购</p></span></div></a>
+            <a href=""><div style="border-bottom: 1px solid #9d9d9d;"><span class="fa">F<p>F码通道</p></span></div></a>
+            <a href=""><div style="border-right: 1px solid #9d9d9d;"><span class="fa fa-vcard"><p>米粉卡</p></span></div></a>
+            <a href=""><div style="border-right: 1px solid #9d9d9d;"><span
+                    class="glyphicon glyphicon-refresh"><p>以旧换新</p></span></div></a>
+            <a href=""><div><span class="fa fa-volume-control-phone"><p>话费充值</p></span></div></a>
+        </div>
+        <div class="img-container">
+            <div class="sales-img1">
+                <img src="static/img/sales1.jpg">
+            </div>
+            <div class="sales-img2">
+                <img src="static/img/sales2.jpg">
+            </div>
+            <div class="sales-img3">
+                <img src="static/img/sales3.jpg">
+            </div>
+        </div>
+    </div>
+
+    <!--小米闪购-->
+    <div class="quick-buy-container">
+        <div class="quick-buy-title">
+            <div><p>小米闪购</p></div>
+            <div style="float: right;"><span class="paginate"><a href=""><span
+                    class="glyphicon glyphicon-menu-left"></span></a><a href=""><span
+                    class="glyphicon glyphicon-menu-right"></span></a></span></div>
+        </div>
+        <div class="content">
+            <div style="margin-left:0;border-top: 1px solid red;">
+                <h3 class="quick-buy-date">14:00场</h3>
+                <img class="flash-img" style="width: 34px; height: 53px;" src="static/img/flash.png">
+                <p style="color: #555555;text-align: center;margin-top: 30px;">距离结束还有</p>
+                <div style="margin-left: 25px;">00</div>&nbsp;&nbsp;<label style="font-size: 1.5em;">:</label>
+                <div>00</div>&nbsp;&nbsp;<label style="font-size: 1.5em;">:</label>
+                <div>59</div>
+            </div>
+            <div style="border-top: 1px solid orange;">
+                <img src="static/img/quick-buy1.jpg">
+                <span style="position: absolute;top:0;">
+                    <p>小米蓝牙项圈耳机 青春版 黑色</p>
+                    <p style="font-size: 0.9em;color:#AAAAAA">轻盈随心，乐享不停</p>
+                    <p style="color:red;">9.9 元<s style="color:#AAAAAA">  169元</s></p>
+                </span>
+            </div>
+            <div style="border-top: 1px solid green;">
+                <img src="static/img/quick-buy2.jpg">
+                <span style="position: absolute;top:0;">
+                    <p>Amazfit Cor手环 猎豹黑</p>
+                    <p style="font-size: 0.9em;color:#AAAAAA">彩色IPS触摸屏，50米游泳防水</p>
+                    <p style="color:red;">249 元<s style="color:#AAAAAA"> 299元</s></p>
+                </span>
+            </div>
+            <div style="border-top: 1px solid blue;">
+                <img src="static/img/quick-buy3.jpg">
+                <span style="position: absolute;top:0;">
+                    <p>小米路由器3A 纯白色</p>
+                    <p style="font-size: 0.9em;color:#AAAAAA">一台覆盖更广的双频路由器</p>
+                    <p style="color:red;">99 元<s style="color:#AAAAAA"> 139元</s></p>
+                </span>
+            </div>
+            <div style="border-top: 1px solid red;">
+                <img src="static/img/quick-buy4.jpg">
+                <span style="position: absolute;top:0;">
+                    <p>小米移动电源10000mAh高配 金色</p>
+                    <p style="font-size: 0.9em;color:#AAAAAA">轻薄设计，轻松出行</p>
+                    <p style="color:red;">138 元<s style="color:#AAAAAA"> 149元</s></p>
+                </span>
+            </div>
+        </div>
+    </div>
+    <div class="phone-bar">
+        <img src="static/img/phone.jpg" style="width:100%;">
+    </div>
+</div>
+
+<div class="produce-container">
+    <div class="phone-container">
+        <div class="phone-title">
+            <div><p>手机</p></div>
+            <div style="float: right;"><i>查看全部 </i><span class="fa fa-chevron-circle-right"></span></div>
+        </div>
+        <div class="phone-content">
+            <div class="phone-recommend">
+                <img src="static/img/phone-recommend.jpg">
+            </div>
+            <div class="phone-info">
+                <div>
+                    <p style="background: #ADFF2F;color: white;width: 80px;margin: auto;">新品</p>
+                    <img src="static/img/phone1.jpg">
+                    <br><br>
+                    <p>小米8 青春版 4GB+64GB</p>
+                    <p style="font-size: 0.9em;color:#AAAAAA">潮流镜面渐变色，2400万自拍旗舰</p>
+                    <p style="color:red;">1399元</p>
+                </div>
+                <div>
+                    <p style="background: #ADFF2F;color: white;width: 80px;margin: auto;">新品</p>
+                    <img src="static/img/phone2.png">
+                    <br><br>
+                    <p>小米Play</p>
+                    <p style="font-size: 0.9em;color:#AAAAAA">内置每月10GB高速流量，高颜值流光渐变色</p>
+                    <p style="color:red;">1099元</p>
+                </div>
+                <div>
+                    <p style="background: red;color: white;width: 80px;margin: auto;">减300元</p>
+                    <img src="static/img/phone3.jpg">
+                    <br><br>
+                    <p>小米8 SE 6GB+64GB</p>
+                    <p style="font-size: 0.9em;color:#AAAAAA">AI 超感光双摄，三星 AMOLED 屏幕</p>
+                    <p style="color:red;">1699元<s style="color:#AAAAAA"> 1999元</s></p>
+                </div>
+                <div>
+                    <p style="background: red;color: white;width: 80px;margin: auto;">减600元</p>
+                    <img src="static/img/phone4.jpg">
+                    <br><br>
+                    <p>小米MIX 2S 8GB+256GB</p>
+                    <p style="font-size: 0.9em;color:#AAAAAA">骁龙845 年度旗舰处理器，艺术品般陶瓷机身</p>
+                    <p style="color:red;">3399元<s style="color:#AAAAAA"> 3999元</s></p>
+                </div>
+                <div>
+                    <p style="background: red;color: white;width: 80px;margin: auto;">享8折</p>
+                    <img src="static/img/phone5.jpg">
+                    <br><br>
+                    <p>小米6X 6GB+128GB</p>
+                    <p style="font-size: 0.9em;color:#AAAAAA">轻薄美观的拍照手机</p>
+                    <p style="color:red;">1499元<s style="color:#AAAAAA"> 1999元</s></p>
+                </div>
+                <div>
+                    <p style="background: red;color: white;width: 80px;margin: auto;">减100元</p>
+                    <img src="static/img/phone6.jpg">
+                    <br><br>
+                    <p>小米Max 3 4GB+64GB</p>
+                    <br>
+                    <p style="color:red;">1599元<s style="color:#AAAAAA"> 1699元</s></p>
+                </div>
+                <div>
+                    <p style="background: red;color: white;width: 80px;margin: auto;">减250元</p>
+                    <img src="static/img/phone7.jpg">
+                    <br><br>
+                    <p>红米6 Pro</p>
+                    <p style="font-size: 0.9em;color:#AAAAAA">高颜值大电量 红米旗舰</p>
+                    <p style="color:red;">1049元<s style="color:#AAAAAA"> 1299元</s></p>
+                </div>
+                <div>
+                    <p style="background: red;color: white;width: 80px;margin: auto;">减30元</p>
+                    <img src="static/img/phone8.jpg">
+                    <br><br>
+                    <p>红米6A 2GB+16GB</p>
+                    <br>
+                    <p style="color:red;">569元<s style="color:#AAAAAA"> 599元</s></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script type="text/javascript" src="static/js/index.js"></script><!--引入个人编写的js文件-->
+</body>
+</html>
